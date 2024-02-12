@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- main style -->
+    <link rel="stylesheet" href="./main.css" />
+    <title>Facebook</title>
+  </head>
+  <body class="bg-gray">
+    <!-- Login -->
+    <div class="container" style="text-align: center; color: blue;">
+        
+      <!-- heading -->
+      <div class="text-center text-lg-start mt-1 pt-1 mt-lg-5 pt-lg-5">
+        <h1 class="text-center text-primary fw-bold fs-1">Facebook</h1>
+      </div>
+      <!-- form card -->
+      <div style="offset-3px">
+        <!-- login form -->
+        <!-- first was form tag -->
+        <div class="bg-white shadow rounded p-3 input-group-lg">
+          <input type="email" class="form-control my-3" placeholder="Alamat email atau nomor telepon" />
+          <input type="password" class="form-control my-3" placeholder="Kata sandi" />
+          <a href="./feed.html"><button class="btn btn-primary w-100 my-3">Log In</button></a>
+          <a href="#" class="text-decoration-none text-center"><p>Lupa kata sandi?</p></a>
+          <!-- create form -->
+          <hr />
+          <div class="text-center my-4">
+            <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#createModal">Buat akun baru</button>
+          </div>
+          <!-- create modal -->
+          <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- head -->
+                <div class="modal-header">
+                  <div>
+                    <h2 class="modal-title" id="exampleModalLabel">Mendaftar</h2>
+                    <span class="text-muted fs-7">Ini cepat dan mudah</span>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <form>
+                    <!-- names -->
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nama depan" />
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nama belakang" />
+                      </div>
+                    </div>
+                    <!-- email & pass -->
+                    <input type="email" class="form-control my-3" placeholder="Alamat email atau nomor ponsel" />
+                    <input type="password" class="form-control my-3" placeholder="Kata sandi baru" />
+                    <!-- DOB -->
+                    <div class="row my-3">
+                      <span class="text-muted fs-7">Tanggal lahir <i class="fas fa-question-circle" data-bs-toggle="popover" type="button" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                      <div class="col">
+                        <select class="form-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select class="form-select">
+                          <option value="januari">januari</option>
+                          <option value="februari">februari</option>
+                          <option value="maret">maret</option>
+                          <option value="april">april</option>
+                          <option value="mei">mei</option>
+                          <option value="juni">juni</option>
+                          <option value="juli">juli</option>
+                          <option value="agustus">agustus</option>
+                          <option value="september">september</option>
+                          <option value="oktober">oktober</option>
+                          <option value="november">november</option>
+                          <option value="desember">desember</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select class="form-select">
+                          <option value="1990">1990</option>
+                          <option value="1991">1991</option>
+                          <option value="1992">1992</option>
+                          <option value="1993">1993</option>
+                          <option value="1994">1994</option>
+                          <option value="1995">1995</option>
+                          <option value="1996">1996</option>
+                          <option value="1997">1997</option>
+                          <option value="1998">1998</option>
+                          <option value="1999">1999</option>
+                          <option value="2000">2000</option>
+                          <option value="2001">2001</option>
+                          <option value="2002">2002</option>
+                          <option value="2003">2003</option>
+                          <option value="2004">2004</option>
+                          <option value="2005">2005</option>
+                          <option value="2006">2006</option>
+                          <option value="2007">2007</option>
+                          <option value="2008">2008</option>
+                          <option value="2009">2009</option>
+                          <option value="2010">2010</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- gender -->
+                    <div class="row my-3">
+                      <span class="text-muted fs-7">Jenis kelamin <i class="fas fa-question-circle" data-bs-toggle="popover" type="button" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault1">Perempuan </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault1">Laki-Laki </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                        </div>
+                      </div>
+                    <!-- gender select -->
+                    <div class="d-none" id="genderSelect">
+                      <select class="form-select">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <div class="my-3">
+                        <span class="text-muted fs-7">Your pronoun is visible to everyone.</span>
+                        <input type="text" class="form-control" placeholder="Gender (optional)" />
+                      </div>
+                    </div>
+                    <!-- btn -->
+                    <div class="text-center mt-3">
+                      <button type="button" class="btn btn-success btn-lg" data-bs-dismiss="modal">Mendaftar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+        </div>
+        <!-- tag -->
+        <div class="my-5 pb-5 text-center">
+          <p class="fw-bold"><a href="#" class="text-decoration-none text-dark">Silahkan !</a> <span class="fw-normal">Login Terlebih dahulu</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white p-4 text-muted">
+      <div class="container">
+        
+        <!-- actions -->
+        <div class="d-flex flex-wrap">
+          <p class="mx-2 fs-7 mb-0">Sign Up</p>
+          <p class="mx-2 fs-7 mb-0">Login</p>
+          <p class="mx-2 fs-7 mb-0">Messenger</p>
+          <p class="mx-2 fs-7 mb-0">Facebook Lite</p>
+          <p class="mx-2 fs-7 mb-0">Watch</p>
+        </div>
+        <!-- copy -->
+        <div class="mt-4 mx-2">
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
